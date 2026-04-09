@@ -709,7 +709,7 @@
 
       /* インラインスタイル上書き */
       section[style] { padding-left: 16px !important; padding-right: 16px !important; }
-      h1[style] { font-size: 26px !important; line-height: 39px !important; letter-spacing: 1px !important; }
+      h1[style]:not(.bubble-heading) { font-size: 26px !important; line-height: 39px !important; letter-spacing: 1px !important; }
       h2[style] { font-size: 22px !important; line-height: 33px !important; letter-spacing: 1px !important; }
       p[style*="font-size:36px"],
       p[style*="font-size: 36px"] { font-size: 22px !important; line-height: 33px !important; }
@@ -738,7 +738,7 @@
       div[style*="max-width:560px"] { max-width: 100% !important; }
     }
     @media (max-width: 480px) {
-      .bubble-heading { font-size: 12px !important; }
+      h1.bubble-heading[style] { font-size: 3.2vw !important; }
     }
   </style>
 </head>
@@ -751,8 +751,8 @@
     <!-- ===== 1. 共感 ===== -->
     <section style="padding:100px clamp(16px,5vw,50px) 80px; position:relative; z-index:1;">
       <div style="max-width:900px; margin:0 auto; text-align:center;">
-        <div style="position:relative; display:block; background:#fff; border-radius:28px; padding:clamp(20px,4vw,32px) clamp(12px,3vw,44px); box-shadow:0 4px 24px rgba(0,0,0,0.07); margin:0 auto 16px; max-width:700px;">
-          <h1 class="bubble-heading" style="font-size:clamp(14px,3.8vw,48px); font-weight:700; color:#222; line-height:1.5; letter-spacing:0px; margin:0; white-space:nowrap;">
+        <div style="position:relative; display:block; background:#fff; border-radius:28px; padding:clamp(20px,4vw,32px) clamp(16px,4vw,44px); box-shadow:0 4px 24px rgba(0,0,0,0.07); margin:0 auto 16px; max-width:700px;">
+          <h1 class="bubble-heading" style="font-size:clamp(12px,3.3vw,48px); font-weight:700; color:#222; line-height:1.5; letter-spacing:0px; margin:0; white-space:nowrap;">
             副業のタイプはわかったけど<br>
             <span style="background:linear-gradient(90deg,#e91e8c,#8c52ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">結局なにすればいいの？</span>
           </h1>
